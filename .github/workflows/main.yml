@@ -1,0 +1,24 @@
+name: "AzureTerraform"
+
+on: workflow_dispatch
+
+jobs:
+  terraform-jobs:
+      runs-on: self-hosted
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v5.0.0
+
+        - name: Azure Login
+          uses: Azure/login@v2.3.0
+          with:
+            client-id:  edbc936d-9206-4e31-b37c-37178a5c8036
+            tenant-id:  90eaef6b-3882-4c51-8467-1155649bc19d
+            subscription-id:  fbac4321-0f41-46f0-baea-f23a62385eb5
+
+
+
+
+
+          
+        
