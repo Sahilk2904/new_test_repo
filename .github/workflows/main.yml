@@ -37,6 +37,13 @@ jobs:
         - name: Terraform Validate
           id: validate
           run: terraform validate -no-color
+
+        - name: Setup TFLint
+        - uses: terraform-linters/setup-tflint@v4
+          with:
+            tflint_version: latest
+
+          
                 
 
 
